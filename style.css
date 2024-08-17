@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#container1 {
+  background-color: crimson;
+  max-width: 60%;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 400px auto 0;
+}
+
+#newGame {
+  line-height: 10px;
+  margin: 0 10px 20px;
+}
+
+#container2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#container2 #home,
+#container2 #guest {
+  max-width: 250px;
+}
+
+#container2 h1 {
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+#container2 #score1,
+#container2 #score2 {
+  font-family: "Oxanium", sans-serif;
+  display: flex;
+  justify-content: end;
+  font-size: 80px;
+  color: antiquewhite;
+  background-color: black;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background-color: crimson;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+  padding: 10px;
+  border-radius: 8px;
+}
