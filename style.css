@@ -58,3 +58,31 @@ button {
   padding: 10px;
   border-radius: 8px;
 }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+#period {
+  margin-top: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+#period button {
+  margin: 0 10px 20px;
+}
+
+#period p {
+  color: antiquewhite;
+  font-size: 20px;
+  margin-left: 50px;
+  border: 2px solid rgb(0, 0, 0, 0.2);
+  padding: 15px;
+}
