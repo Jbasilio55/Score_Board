@@ -10,8 +10,12 @@ score2El.textContent = score2;
 function newGame() {
   score1 = 0;
   score2 = 0;
+
   score1El.textContent = 0;
   score2El.textContent = 0;
+
+  score1El.setAttribute("class", "");
+  score2El.setAttribute("class", "");
 }
 
 function winningTeam(score1, score2) {
@@ -58,4 +62,30 @@ function add_3() {
   winningTeam(score1, score2);
 }
 
-function period() {}
+let count = 1;
+
+function period() {
+  let currentChosen = document.getElementById("chosen-period");
+
+  if (count === 4) {
+    // Remove the id from the currently chosen period
+    if (currentChosen) {
+      currentChosen.removeAttribute("id");
+    }
+
+    count = 1;
+
+    // Set the id on the first period (assuming it's the first p element)
+    let firstPeriod = document.getElementsByClassName("main-period")[0];
+    firstPeriod.setAttribute("id", "chosen-period");
+  } else {
+    let nextChosen = currentChosen.nextElementSibling;
+
+    if (nextChosen) {
+      nextChosen.setAttribute("id", "chosen-period");
+      currentChosen.removeAttribute("id");
+    }
+
+    count += 1;
+  }
+}
