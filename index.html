@@ -15,30 +15,30 @@
   </head>
   <body>
     <div id="container1">
-      <button id="newGame">NEW GAME</button>
+      <button id="newGame" onclick="newGame()">NEW GAME</button>
       <div id="container2">
         <div id="home">
           <h1>HOME</h1>
           <h2 id="score1">99</h2>
           <div class="btns">
-            <button class="btn">+1</button>
-            <button class="btn">+2</button>
-            <button class="btn">+3</button>
+            <button class="btn" onclick="add1()">+1</button>
+            <button class="btn" onclick="add2()">+2</button>
+            <button class="btn" onclick="add3()">+3</button>
           </div>
         </div>
         <div id="guest">
           <h1>GUEST</h1>
           <h2 id="score2">99</h2>
           <div class="btns">
-            <button class="btn">+1</button>
-            <button class="btn">+2</button>
-            <button class="btn">+3</button>
+            <button class="btn" onclick="add_1()">+1</button>
+            <button class="btn" onclick="add_2()">+2</button>
+            <button class="btn" onclick="add_3()">+3</button>
           </div>
         </div>
       </div>
       <hr />
       <div id="period">
-        <button>PERIOD</button>
+        <button onclick="period()">PERIOD</button>
         <p>1</p>
         <p>2</p>
         <p>3</p>
