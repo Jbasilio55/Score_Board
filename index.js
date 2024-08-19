@@ -16,6 +16,21 @@ function newGame() {
 
   score1El.setAttribute("class", "");
   score2El.setAttribute("class", "");
+
+  // Reset period
+  count = 1;
+
+  // Remove the 'chosen-period' id from the current period
+  let currentChosen = document.getElementById("chosen-period");
+  if (currentChosen) {
+    currentChosen.removeAttribute("id");
+  }
+
+  // Set the 'chosen-period' id to the first period
+  let firstPeriod = document.getElementsByClassName("main-period")[0];
+  if (firstPeriod) {
+    firstPeriod.setAttribute("id", "chosen-period");
+  }
 }
 
 function winningTeam(score1, score2) {
